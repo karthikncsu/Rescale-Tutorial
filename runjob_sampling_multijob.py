@@ -10,7 +10,7 @@ from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
 
-def jobdata(file_id,numproc):
+def jobdata(file_id,numproc,projectId):
 
   command="cd Sampling-from-high-dimensional-space\n"
   command=command+"cd code\n"
@@ -18,7 +18,7 @@ def jobdata(file_id,numproc):
 
   data={
       'name': 'Intern assignment sampling '+str(numproc),
-      "projectId":'gxzXS',
+      "projectId":projectId,
       'jobanalyses': [
         {
           'useMpi': True,
@@ -43,14 +43,16 @@ def jobdata(file_id,numproc):
 
   return data
 
-input_file='Sampling-from-high-dimensional-space.zip'
+dotenv.load_dotenv()
+projectId=os.getenv('projectId')
 
+input_file='Sampling-from-high-dimensional-space.zip'
 
 jobsobj=BatchJobSubmit()
 status_input=jobsobj.file_upload(input_file)
 if status_input:
-    for numproc in [1,2,4,8,18,36]:
-        data=jobdata(jobsobj.file_ids[0],numproc=numproc)
+    for numproc in [36]:
+        data=jobdata(jobsobj.file_ids[0],numproc=numproc,projectId=projectId)
         status_submit=jobsobj.setup_submit_job(data)
 
 jobsobj.status_job()
