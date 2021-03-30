@@ -21,3 +21,5 @@ projectId=xxxx
 [runjob_sampling_multijob.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/runjob_sampling_multijob.py): Code to benchmark the parallelization of sequential Monte Carlo [code](https://github.com/karthikncsu/Sampling-from-high-dimensional-space) by automating the job submissions with multiple processors using the BatchJobSubmit objects.
 
 [download_file.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/download_file.py), [downloading_files.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/downloading_files.py): Tutorial for downloading files using REST API.
+
+[runjob_sampling_multijob.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/runjob_airfoil2D.py): Code to automating the OpenFOAM job submissions.
