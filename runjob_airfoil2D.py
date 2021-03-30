@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 def jobdata(file_id,projectId):
 
   data={
-      'name': 'Intern assignment',
+      'name': 'Airfoil 2D',
       "projectId":'gxzXS',
       'jobanalyses': [
       {

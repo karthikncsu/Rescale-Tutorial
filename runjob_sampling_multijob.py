@@ -17,7 +17,7 @@ def jobdata(file_id,numproc,projectId):
   command=command+'conda install -y mpi4py \nmpirun -np '+str(numproc)+' python sampler.py alloy.txt alloy.out 20000 SMC'
 
   data={
-      'name': 'Intern assignment sampling '+str(numproc),
+      'name': 'Sampling '+str(numproc),
       "projectId":projectId,
       'jobanalyses': [
         {
