@@ -16,5 +16,7 @@ Python code for [sampling from high dimensional space with complex, non-linear c
 
 ### Files
 rescale_restapi.py : Contains BatchJobSubmit class for methods for uploading input files, setting and submitting jobs using REST API.
+
 runjob_sampling_multijob.py: Code to benchmark the parallelization of sequential Monte Carlo [code](https://github.com/karthikncsu/Sampling-from-high-dimensional-space) by automating the job submissions with multiple processors using the BatchJobSubmit objects.
+
 download_file.py, downloading_files.py: Tutorial for downloading files using REST API.
