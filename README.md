@@ -1,5 +1,5 @@
 # Rescale-Tutorial
-Python program for submitting automated simulation jobs to Rescale cloud platform using REST API. The parallelization of sequential Monte Carlo [code](https://github.com/karthikncsu/Sampling-from-high-dimensional-space) is [benchmarked](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/rescale_rest_api.pdf)
+This repo contains the python program for submitting automated simulation jobs to Rescale cloud platform using REST API. The parallelization of sequential Monte Carlo [code](https://github.com/karthikncsu/Sampling-from-high-dimensional-space) is [benchmarked](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/rescale_rest_api.pdf) using automated job submissions.
 
 ### Required python packages to run the code
 
