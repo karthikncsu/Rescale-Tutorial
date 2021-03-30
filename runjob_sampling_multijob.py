@@ -51,7 +51,7 @@ input_file='Sampling-from-high-dimensional-space.zip'
 jobsobj=BatchJobSubmit()
 status_input=jobsobj.file_upload(input_file)
 if status_input:
-    for numproc in [36]:
+    for numproc in [1,2,4,8,18,36]:
         data=jobdata(jobsobj.file_ids[0],numproc=numproc,projectId=projectId)
         status_submit=jobsobj.setup_submit_job(data)
 
