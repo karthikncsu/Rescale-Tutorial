@@ -160,7 +160,7 @@ class BatchJobSubmit:
             file_found=True
             downloadUrl=arg["downloadUrl"]
 
-            filename_save="./downloads/out_"+job_id+"_"+filename
+            filename_save="./../downloads/out_"+job_id+"_"+filename
             fout=open(filename_save,"wb")
             with closing(requests.get(downloadUrl, headers=headers, stream=True)) as r:
               with open(filename, 'r') as f:
