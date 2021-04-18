@@ -22,4 +22,4 @@ projectId=xxxx
 
 [download_file.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/download_file.py), [downloading_files.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/downloading_files.py): Tutorial for downloading files using REST API.
 
-[runjob_sampling_multijob.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/runjob_airfoil2D.py): Code to automating the OpenFOAM job submissions.
+[runjob_airfoil2D.py](https://github.com/karthikncsu/Rescale-Tutorial/blob/main/runjob_airfoil2D.py): Code to automating the OpenFOAM job submissions.
